@@ -21,9 +21,20 @@ body{
     left:50%;
     /* um in der Mitte zu positionieren */
     transform:translate(-50%, -50%);
+   
   /* margin-top: -60px;
   margin-left: -60px; */
+ 
+  /* animation: scale 1s ease-in-out alternate; */
 }
+/* @keyframes scale {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(2);
+    }
+  } */
 .tag{
     color:white;
     position:absolute;
@@ -33,5 +44,6 @@ body{
     left:60%; */
     transform:translate(20px, 20px);
     font-size:35px;
+   
 
 }

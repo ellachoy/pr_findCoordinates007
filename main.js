@@ -6,10 +6,13 @@ const tag= document.querySelector('.tag');
 document.addEventListener('mousemove',(event)=>{
     const x= event.clientX;
     const y= event.clientY;
-    // console.log(`${x}, ${y}`);
-   
-    vertical.style.left=`${x}px`;
-    horizontal.style.top=`${y}px`;
+    
+//   use translate to efficient code
+   vertical.style.transform = ` translateX(${x}px)`;
+  horizontal.style.transform = ` translateY(${y}px)`;
+    // vertical.style.left=`${x}px`;
+    // horizontal.style.top=`${y}px`;
+
     target.style.top=`${y}px`;
     target.style.left=`${x}px`;
     tag.style.top=`${y}px`;
